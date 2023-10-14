@@ -1,42 +1,38 @@
-# world.db.cities
-
-world.db web app sample listing the world's greatest cities
+# soliscript quick starter - run (blockchain) contracts in rubidity (with 100%-solidity compatible data types & abis) on an ethereum simulacrum in your own home for fun & profit (for free)
 
 
-## Live Demo
 
-Try the live demo running on heroku @ [`worldcities.herokuapp.com`](http://worldcities.herokuapp.com)
+## What's Solidity?! What's Rubidity?!
 
+See [**Solidity - Contract Application Binary Interface (ABI) Specification** »](https://docs.soliditylang.org/en/latest/abi-spec.html)
 
-## Setup in 1-2-3 Steps
-
-Step 1: Install all libraries (gem) using bundler
-
-    $ bundle install
-
-Step 2: Download world.db datasets in a zip archive (~150 KiB); create world.db database and tables; load datasets using rake
-
-    $ mkdir ./tmp       # world.db zip archive will get downloaded to tmp folder
-    $ rake setup_world
-
-or use individual tasks
-
-    $ rake dl_world create_world load_world
-
-Step 3: Startup the web server and open up the country codes page in your web browser
-
-    $ rackup
-
-That's it.
+See [**Rubidity - Ruby for Layer 1 (L1) Contracts / Protocols with "Off-Chain" Indexer**  »](https://github.com/s6ruby/rubidity)
 
 
-## License
+## Step 0 - Install Rubidity (Ruby Package)
 
-The `world.db.cities` scripts are dedicated to the public domain.
-Use it as you please with no restrictions whatsoever.
+``` ruby
+gem install soliscript
+```
+
+
+
+##  Usage 
+
+### Step 1 - Try Out Some Contracts
+
+## Bonus - More Blockchain (Crypto) Tools, Libraries & Scripts In Ruby
+
+See [**/blockchain**](https://github.com/rubycocos/blockchain) 
+at the ruby code commons (rubycocos) org.
+
+
+
 
 
 ## Questions? Comments?
 
-Send them along to the [Open Mundi (world.db) Database Forum/Mailing List](http://groups.google.com/group/openmundi).
-Thanks!
+Join us in the [Rubidity (community) discord (chat server)](https://discord.gg/3JRnDUap6y). Yes you can.
+Your questions and commentary welcome.
+
+Or post them over at the [Help & Support](https://github.com/geraldb/help) page. Thanks.
