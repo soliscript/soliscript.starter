@@ -21,12 +21,11 @@ Yes, you can. it's just ruby.  Run the sample (blockchain) contracts from the [R
 with Soliscript (Rubidity and Simulacrum)!
 
 
-Win x65 000 - Roll the (Satoshi) Dice, see [satoshidice.rb](satoshidice.rb)
-
-Kick Start Your Project with a Crowd Funder,
+- Win x65 000 - Roll the (Satoshi) Dice, see [satoshidice.rb](satoshidice.rb)
+- Kick Start Your Project with a Crowd Funder,
 see [crowdfunder.rb](crowdfunder.rb)
+- Liquid / Delegative Democracy - Let's Vote (or Delegate Your Vote) on a Proposal, see [ballot.rb](ballot.rb)
 
-Liquid / Delegative Democracy - Let's Vote (or Delegate Your Vote) on a Proposal, see [ballot.rb](ballot.rb)
 
 
 

@@ -24,9 +24,9 @@ storage   creator:          Address,
           state:            State,
           total_raised:     UInt,
           complete_at:      Timestamp,
-          contributions:    Array( Contribution ) 
+          contributions:    array( Contribution ) 
 
-sig :constructor[Timedelta, String, Address, UInt]
+sig [Timedelta, String, Address, UInt]
 def constructor(
       time_in_hours_for_fundraising:,
       campaign_url:,
@@ -42,7 +42,7 @@ def constructor(
 end
 
 
-sig :pay_out, []
+sig []
 def pay_out
   assert @state.successful?,  'state must be set to successful for pay out'
 
@@ -51,7 +51,7 @@ def pay_out
 end
 
 
-sig :check_if_funding_complete_or_expired, []
+sig []
 def check_if_funding_complete_or_expired
   if @total_raised > @minimum_to_raise
     @state = State.successful
@@ -64,7 +64,7 @@ def check_if_funding_complete_or_expired
 end
 
 
-sig :sig, [], return: UInt
+sig [], returns: UInt
 def contribute
   assert @state.fundraising?, 'state must be set to fundraising to contribute'
 
@@ -81,7 +81,7 @@ def contribute
 end
 
 
-sig :refund, [UInt], returns: Bool
+sig [UInt], returns: Bool
 def refund( id: )
   assert @state.expired_refund?, 'state must be set to expired_refund to refund'
   assert @contributions.size > id && id >= 0 && @contributions[id].amount != 0,  'contribution id out-of-range'
@@ -94,7 +94,7 @@ def refund( id: )
   true
 end
 
-sig :kill, []
+sig []
 def kill
   assert msg.sender == @creator,  'only creator can kill contract'
   # wait 24 weeks after final contract state before allowing contract destruction
