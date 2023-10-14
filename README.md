@@ -1,31 +1,32 @@
-# soliscript quick starter - run (blockchain) contracts in rubidity (with 100%-solidity compatible data types & abis) on an ethereum simulacrum in your own home for fun & profit (for free)
+# Soliscript Quick Starter - Run (Blockchain) Contracts w/ Soliscript (Rubidity and Ethereum Simulacrum)!
 
-
-
-## What's Solidity?! What's Rubidity?!
+## What's Solidity?!  What's Rubidity?!
 
 See [**Solidity - Contract Application Binary Interface (ABI) Specification** »](https://docs.soliditylang.org/en/latest/abi-spec.html)
 
 See [**Rubidity - Ruby for Layer 1 (L1) Contracts / Protocols with "Off-Chain" Indexer**  »](https://github.com/s6ruby/rubidity)
 
 
-## Step 0 - Install Rubidity (Ruby Package)
-
-``` ruby
-gem install soliscript
-```
 
 
 
-##  Usage 
 
-### Step 1 - Try Out Some Contracts
 
-## Bonus - More Blockchain (Crypto) Tools, Libraries & Scripts In Ruby
 
-See [**/blockchain**](https://github.com/rubycocos/blockchain) 
-at the ruby code commons (rubycocos) org.
 
+
+## Red Paper Series
+
+Yes, you can. it's just ruby.  Run the sample (blockchain) contracts from the [Red Paper](https://github.com/s6ruby/redpaper)
+with Soliscript (Rubidity and Simulacrum)!
+
+
+Win x65 000 - Roll the (Satoshi) Dice, see [satoshidice.rb](satoshidice.rb)
+
+Kick Start Your Project with a Crowd Funder,
+see [crowdfunder.rb](crowdfunder.rb)
+
+Liquid / Delegative Democracy - Let's Vote (or Delegate Your Vote) on a Proposal, see [ballot.rb](ballot.rb)
 
 
 
